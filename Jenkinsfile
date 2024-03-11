@@ -18,6 +18,10 @@ pipeline {
             steps{
                 echo 'deploying'
             }
+        stage('Jacoco'){
+            steps{
+
+            }
 
     
         
