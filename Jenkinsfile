@@ -24,16 +24,7 @@ pipeline {
             }
         }
         
-        stage('Generate Code Coverage Report') {
-            steps {
-                sh 'mvn jacoco:report'
-            }
-            post {
-                always {
-                    jacoco '**/target/site/jacoco/jacoco.xml'
-                }
-            }
         }
         
-    }
+    
 }
